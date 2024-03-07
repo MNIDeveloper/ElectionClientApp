@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ElectionApp.MenuPage">
+    <ContentPage.MenuBarItems>
+        <MenuBarItem Text="Person">
+            <MenuFlyoutItem Text="Add Person" />
+            <MenuFlyoutItem Text="Update Person"/>
+        </MenuBarItem>
+        <MenuBarItem Text="Candidate">
+            <MenuFlyoutItem Text="Add Candidate" />
+            <MenuFlyoutItem Text="Update Candidate"/>
+        </MenuBarItem>
+        <MenuBarItem Text="Party">
+            <MenuFlyoutItem Text="Add Party" />
+            <MenuFlyoutItem Text="Update Party"/>
+        </MenuBarItem>
+        <MenuBarItem Text="Constituency">
+            <MenuFlyoutItem Text="Add Constituency" />
+            <MenuFlyoutItem Text="Update Constituency"/>
+        </MenuBarItem>
+    </ContentPage.MenuBarItems>
+    <VerticalStackLayout>
+        
+        <Grid Margin="10" x:Name="PersonForm">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+             </Grid.ColumnDefinitions>
+            <Label x:Name="lblFname" Text="First Name :" TextColor ="#000099" FontAttributes="Bold" Grid.Row="0" Grid.Column ="0" Margin="0,0,0,10" VerticalOptions="End"/>
+            <Entry x:Name="txtFname" TextColor="#000099" Placeholder="Please Enter First Name" Grid.Row="0" Grid.Column ="1" Margin="0,0,0,10"/>
+            <Label x:Name="lblMname" Text="Middle Name :" TextColor ="#000099" FontAttributes="Bold" Grid.Row="1" Grid.Column ="0" Margin="0,0,0,10" VerticalOptions="End"/>
+            <Entry x:Name="txtMname" TextColor="#000099" Placeholder="Please Enter Middle Name" Grid.Row="1" Grid.Column ="1" Margin="0,0,0,10"/>
+            <Label x:Name="lblLname" Text="Last Name :" TextColor ="#000099" FontAttributes="Bold" Grid.Row="2" Grid.Column ="0" Margin="0,0,0,10" VerticalOptions="End"/>
+            <Entry x:Name="txtLname" TextColor="#000099" Placeholder="Please Enter Last Name" Grid.Row="2" Grid.Column ="1" Margin="0,0,0,10"/>
+            <Label x:Name="lblAlias" Text="Alias :" TextColor ="#000099" FontAttributes="Bold" Grid.Row="3" Grid.Column ="0" Margin="0,0,0,10" VerticalOptions="End"/>
+            <Entry x:Name="txtAlias" TextColor="#000099" Placeholder="Please Enter Alias" Grid.Row="3" Grid.Column ="1" Margin="0,0,0,10"/>
+            <Label x:Name="lblDOB" Text="Date of Birth :" TextColor ="#000099" FontAttributes="Bold" Grid.Row="4" Grid.Column ="0" Margin="0,0,0,10" VerticalOptions="End"/>
+            <DatePicker x:Name="dpDOB" Grid.Row="4" Grid.Column ="1" Margin="0,0,0,10"/>
+
+        </Grid>
+       
+    </VerticalStackLayout>
+</ContentPage>
